@@ -224,7 +224,7 @@ window.addEventListener("load", function() {
 			if (this.p.dead) {
 				this.del('2d, aiBounce');
 				this.p.deadTimer++;
-				if (this.p.deadTimer > 24) {
+				if (this.p.deadTimer > 240) { // TODO: Fehler: 24
 					// Dead for 24 frames, remove it.
 					this.destroy();
 				}
@@ -313,7 +313,7 @@ window.addEventListener("load", function() {
 				colObj.p.score += this.p.amount;
 				Q.stageScene('hud', 3, colObj.p);
 			}
-			this.destroy();
+			console.log("Todo here"); // TODO: Fehler: this.destroy()
 		} });
 
 	/*******************************************************************************************************************
