@@ -286,7 +286,7 @@ window
 								col.obj.trigger('enemy.hit', {
 									"enemy" : this,
 									"col" : col });
-								Q.audio.play('hit.mp3');
+								Q.audio.play('jump.mp3'); // TODO: Fehler: Audio should play hit.mp3
 							}
 						},
 
@@ -356,7 +356,7 @@ window
 								colObj.p.score += this.p.amount;
 								Q.stageScene('hud', 3, colObj.p);
 							}
-							Q.audio.play('coin.mp3');
+							Q.audio.play('hit.mp3'); // TODO: Fehler: Audio should play coin.mp3
 							this.destroy();
 						} });
 
