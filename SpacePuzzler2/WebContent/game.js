@@ -70,7 +70,7 @@ window.addEventListener("load", function() {
 
 		resetLevel : function() {
 			Q.stageScene("level1");
-			this.p.strength = 100;
+			this.p.strength = 50; // TODO: Fehler: 100
 			this.animate({
 				opacity : 1 });
 			Q.stageScene('hud', 3, this.p);
@@ -115,7 +115,7 @@ window.addEventListener("load", function() {
 			}
 
 			if (this.p.onLadder) {
-				this.p.gravity = 0;
+				this.p.gravity = 1; // TODO: Fehler: 0
 
 				if (Q.inputs['up']) {
 					this.p.vy = -this.p.speed;
